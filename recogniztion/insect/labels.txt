@@ -1,0 +1,5 @@
+0 Chigger
+1 Flea
+2 Mosquito
+3 No bite
+4 Spider
