@@ -3,4 +3,5 @@ from . import views
 urlpatterns = [
     path('',views.index,name="index.html"),
     path('page/<int:predictions>/',views.page,name="page.html"),
+    path('healthcheck/',views.healthcheck,name='healthcheck'),
 ]
