@@ -42,3 +42,5 @@ def page(request,predictions):
         #print(bugs.name)
         #print(medicine[0].id)
         return render(request,'page.html',{"bug":bugs,"medicine":medicine,"No_bite":False})
+def healthcheck(request):
+    return HttpResponse("OK",200)
