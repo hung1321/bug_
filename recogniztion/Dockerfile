@@ -1,6 +1,7 @@
 FROM centos:6
 
 # Install necessary dependencies
+RUN sudo sed -i 's/https/http/g' /etc/yum.repos.d/epel.repo
 RUN yum -y install epel-release
 RUN yum -y install \ 
     tzdata \
@@ -16,7 +17,6 @@ RUN yum -y install \
 USER root
 # Set up Python environment
 FROM ubuntu:18.04
-RUN sudo sed -i 's/https/http/g' /etc/yum.repos.d/epel.repo
 RUN apt-get update && apt-get -y install \
     build-essential libpcre3 libpcre3-dev zlib1g zlib1g-dev libssl-dev wget
 
