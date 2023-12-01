@@ -1,5 +1,4 @@
-Copy code
-# Start from Ubuntu 18.04
+
 FROM ubuntu:18.04 as builder
 
 # Install necessary dependencies for NGINX build
